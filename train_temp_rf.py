@@ -55,8 +55,10 @@ def main():
     print("\n[2/3] Training Random Forest...")
 
     model = RandomForestClassifier(
-        n_estimators=200,
+        n_estimators=100,
         max_depth=None,
+        max_features="sqrt",
+        class_weight="balanced",
         random_state=42,
         n_jobs=-1
     )

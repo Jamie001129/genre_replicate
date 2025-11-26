@@ -1,0 +1,6 @@
+Random Forest Results
+========================================
+Test Accuracy:  0.6533
+Test Precision: 0.6470
+Test Recall:    0.6090
+Test F1:        0.6274

@@ -1,0 +1,13 @@
+Training Configuration
+========================================
+Epochs: 100
+Batch Size: 64
+Learning Rate: 0.001
+Architecture: 7 - 10 - 10 - 10 - 2
+
+Final Results
+========================================
+Test Accuracy:  0.6719
+Test Precision: 0.6640
+Test Recall:    0.6383
+Test F1:        0.6509

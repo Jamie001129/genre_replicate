@@ -218,10 +218,10 @@ def plot_training_curves(train_losses, test_metrics, output_dir):
     axes[1].grid(True)
     
     plt.tight_layout()
-    plt.savefig(output_dir / 'training_curves.png', dpi=150)
+    plt.savefig(output_dir / 'ann_training_curves.png', dpi=150)
     plt.close()
     
-    print(f"  ✓ Training curves saved to {output_dir / 'training_curves.png'}")
+    print(f"  ✓ Training curves saved to {output_dir / 'ann_training_curves.png'}")
 
 
 def main():
@@ -359,14 +359,14 @@ def main():
     print(f"  ✓ Model saved: {model_path}")
     
     # Save training log
-    log_path = output_dir / "train_log.txt"
+    log_path = output_dir / "ann_train_log.txt"
     with open(log_path, 'w') as f:
         f.write("Training Configuration\n")
         f.write("=" * 40 + "\n")
         f.write(f"Epochs: {EPOCHS}\n")
         f.write(f"Batch Size: {BATCH_SIZE}\n")
         f.write(f"Learning Rate: {LEARNING_RATE}\n")
-        f.write(f"Architecture: {n_features} → 10 → 10 → 10 → 2\n")
+        f.write(f"Architecture: {n_features} - 10 - 10 - 10 - 2\n")
         f.write("\n")
         f.write("Final Results\n")
         f.write("=" * 40 + "\n")
@@ -387,7 +387,7 @@ def main():
     print(f"\nOutput files:")
     print(f"  1. Model:  {model_path}")
     print(f"  2. Log:    {log_path}")
-    print(f"  3. Curves: {output_dir / 'training_curves.png'}")
+    print(f"  3. Curves: {output_dir / 'ann_training_curves.png'}")
     print(f"\nFinal Test Accuracy: {final_metrics['accuracy']:.2%}")
     print("\n✅ Ready for next step: generate_pairs.py")
 
