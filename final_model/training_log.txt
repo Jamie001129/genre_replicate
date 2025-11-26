@@ -1,0 +1,17 @@
+GenRe Transformer Training Log
+========================================
+
+Configuration:
+  Epochs: 100
+  Batch size: 512
+  Learning rate: 0.0001
+  Architecture:
+    - d_model: 32
+    - heads: 4
+    - encoder layers: 8
+    - decoder layers: 8
+    - bins: 50
+
+Results:
+  Best val loss: 0.4584
+  Total parameters: 249,758
